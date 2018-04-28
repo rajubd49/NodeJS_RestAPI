@@ -13,9 +13,10 @@ app.use(express.static('./public'))
 // Using bodyparser to access html fields
 app.use(bodyparser.urlencoded({extended: false}))
 
-// Localhost port define - localhost:3003
-app.listen(3003, ()=> {
-  console.log("NodeJS RestAPI Server is Up and Running using port 3003");
+// Localhost port define - localhost:PORT
+const PORT = process.env.PORT || 3003
+app.listen(PORT, ()=> {
+  console.log("NodeJS RestAPI Server is Up and Running using port:" + PORT);
 })
 
 //Root route set
