@@ -29,7 +29,3 @@ app.get("/", (req, res) => {
 const route = require('./routes/user.js')
 app.use(route)
 
-
-
-
-
