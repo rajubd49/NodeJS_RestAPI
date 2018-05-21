@@ -1,5 +1,5 @@
 # NodeJS_RestAPI
-NodeJS sample RestAPI implementation for GET, POST, PUT and DELETE methods using MySQL
+NodeJS sample RestAPI implementation for GET, POST, PUT and DELETE methods using MySQL database.
 
 ## Features
 
