@@ -5,10 +5,13 @@ const morgan = require('morgan')
 const bodyparser = require('body-parser')
 
 //Log request details on terminal
-app.use(morgan('short'))
+app.use(morgan('dev'))
 
 //Load form.html from public directory
 app.use(express.static('./public'))
+
+// Using to support JSON-encoded bodies
+app.use(bodyparser.json());
 
 // Using bodyparser to access html fields
 app.use(bodyparser.urlencoded({extended: false}))
